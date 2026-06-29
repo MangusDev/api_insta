@@ -1,21 +1,11 @@
-# Cache e arquivos locais do Yarn Berry
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
 
-# Logs de Erro
 npm-debug.log*
 yarn-error.log*
 
-# Git e ferramentas locais
 .git
 .vscode
 .env
-
+Dockerfile
+build
+dist
 node_modules
-
-# Resíduos de PnP (projeto usa node-modules via .yarnrc.yml)
-.pnp.*
-.pnp.cjs
-.pnp.loader.mjs
