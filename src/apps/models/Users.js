@@ -18,9 +18,7 @@ class Users extends Model{
             },
             {
                 sequelize,
-                tableName: 'users',
-                underscored: true,
-            },
+            }
         );
         return this;
     }
