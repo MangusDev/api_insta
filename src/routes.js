@@ -1,5 +1,7 @@
 const { Router } = require('express');
+const schemaValidator = require('./apps/middlewares/schemaValidator');
 const UserController = require('./apps/controllers/UserController');
+const userSchema = require('./schema/create.user.schema.json')
 const routes = new Router();
 
 routes.get('/health', (req, res) => res.send({
@@ -7,6 +9,6 @@ routes.get('/health', (req, res) => res.send({
 }));
 
 
-routes.post('/user', UserController.create);
+routes.post('/user', schemaValidator(userSchema), UserController.create);
 
 module.exports = routes;

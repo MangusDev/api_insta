@@ -10,7 +10,7 @@ services:
       MYSQL_ROOT_PASSWORD: 'LGmt72?.'
       MYSQL_DATABASE: 'insta'
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
 
