@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # Serviço do Banco de Dados
+  database:
+    image: mysql:8.0
+    container_name: insta_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'LGmt72?.'
+      MYSQL_DATABASE: 'insta'
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  # Serviço da sua API Node (baseada no seu Dockerfile)
+  app:
+    build: .
+    container_name: insta_app
+    ports:
+      - "3003:3003"
+    depends_on:
+      - database
+    environment:
+      - DB_HOST=database # <--- O host vira o nome do serviço acima!
+      - PORT=3003
+      - DIALECT=mysql
+      - DB_USERNAME=root
+      - DB_PASSWORD=LGmt72?.
+      - DATABASE=insta
+      - DB_PORT=3306
+
+volumes:
+  mysql_data:
