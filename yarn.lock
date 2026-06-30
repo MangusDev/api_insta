@@ -2251,6 +2251,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jsonschema@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "jsonschema@npm:1.5.0"
+  checksum: 10c0/c24ddb8d741f02efc0da3ad9b597a275f6b595062903d3edbfaa535c3f9c4c98613df68da5cb6635ed9aeab30d658986fea61d7662fc5b2b92840d5a1e21235e
+  languageName: node
+  linkType: hard
+
 "katex@npm:^0.16.0":
   version: 0.16.46
   resolution: "katex@npm:0.16.46"
@@ -3352,6 +3359,7 @@ __metadata:
     eslint-plugin-import: "npm:^2.32.0"
     express: "npm:^5.2.1"
     globals: "npm:^17.6.0"
+    jsonschema: "npm:^1.5.0"
     mysql2: "npm:^3.22.5"
     nodemon: "npm:^3.1.14"
     sequelize: "npm:^6.37.8"

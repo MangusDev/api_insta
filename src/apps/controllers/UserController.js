@@ -11,7 +11,10 @@ class UserController {
             return res.status(400).json({ message: 'Usuario existe' });
         }
         const user = await Users.create(req.body);
-        res.send({ user });
+        if(!user) {
+            return res.status(400).json({ message: 'Falha ao criar usuario' });
+        }
+        return res.send({ message: "Usuario criado!" });
     }
 }
 
