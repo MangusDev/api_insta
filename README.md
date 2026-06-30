@@ -1,5 +1,6 @@
 # api_insta
 
+{ PROJETO PESSOA DE ESTUDO!!! }
 API REST simula o instagram em Node.js com Express e Sequelize, conectada a um banco MySQL. Expõe rotas para consulta de usuários e verificação de saúde da aplicação.
 
 ## Tecnologias
